@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Javascript Assignment 01</title>
+    <link rel="icon" type="image/x-icon" href="./images/jvscrpt.png">
+    <link rel="stylesheet" href="./styless.css">
+    <script src="./assignment1.js"></script>
+    <style>
+        @media screen and (min-width: 480px) {
+            .split {
+                display: block;
+            }
+            .panel-view {
+                width: 100% !important;
+                display: block;
+            }
+        }
+        
+        @media screen and (min-width: 1200px) {
+            .split {
+                display: flex;
+            }
+            .panel-view {
+                width: 50% !important;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <center>
+        <h1>JAVASCRIPT ASSIGNMENT</h1>
+    </center>
+    <br>
+    <section class="split">
+        <div class="panel-view">
+            <div class="container">
+                <table class="content-table" id="t1">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>User Id</th>
+                            <th>Employment</th>
+                            <th>Country</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="panel-view">
+            <div class="card">
+                <center>
+                    <h2>USER DETAILS</h2>
+                </center>
+                <center><img id="img1" /></center>
+                <p id="greeting"></p>
+                <p>First Name: <span id="fname"></span></p>
+                <p>Last Name: <span id="lname"></span></p>
+                <p>UID: <span id="uid"></span></p>
+                <p>Date of Birth: <span id="dob"></span></p>
+                <p>Employment Title: <span id="emp"></span></p>
+                <p>Country: <span id="country"></span></p>
+                <p>Credit Card: <span id="crecard"></span></p>
+                <p>Subscription: <span id="subs"></span></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

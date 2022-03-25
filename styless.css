@@ -1,0 +1,167 @@
+    * {
+        padding: 0%;
+        margin: 0%;
+        background-size: cover;
+    }
+    
+    h1 {
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #212738;
+    }
+    
+    h2 {
+        padding: 10px;
+        margin: 5px;
+        color: #212738;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    
+    section {
+        position: relative;
+        height: 100vh;
+        display: flex;
+    }
+    
+    section .screen {
+        position: relative;
+        flex-grow: 1;
+        transition: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    section .screen:nth-child(1) {
+        background-color: #fff;
+    }
+    
+    section .screen:nth-child(2) {
+        background-color: #6E9887;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 25px;
+        border-bottom: 0.5px solid #E4FDE1;
+    }
+    
+    .container {
+        height: 100vh;
+    }
+    
+    .content-table {
+        height: 100vh;
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    
+    .content-table thead tr {
+        background-color: #EDBFB7;
+        text-align: left;
+        color: #6E9887;
+    }
+    
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #B5BFA1;
+        border-left: 1px solid #B5BFA1;
+        border-right: 1px solid #B5BFA1;
+    }
+    
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .content-table tbody tr {
+        border-bottom: 2px solid #EDBFB7;
+    }
+    
+    section .screen:nth-child(2) p {
+        font-weight: bolder;
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #440381;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    section .screen:nth-child(2) p span {
+        color: #6A2E35;
+        font-weight: bolder;
+        font-size: large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    img .img1 {
+        height: 2px;
+        width: 2px;
+    }
+    
+    @media screen and (max-width:500px) {
+        .screen {
+            flex-direction: column;
+        }
+        .screen {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        .content-table thead {
+            display: none;
+        }
+        .content-table,
+        .content-table tbody,
+        .content-table tr,
+        .content-table td {
+            display: block;
+        }
+        .content-table tr {
+            padding: 15px;
+        }
+        .content-table td {
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
+        .content-table td::before {
+            content: attr(data);
+            position: absolute;
+            left: 0;
+            padding-left: 15px;
+            font-size: 5px;
+            text-align: left;
+            font-weight: 500;
+        }
+    }
+    
+    .card {
+        background-color: #6E9887;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 25px;
+        border-bottom: 0.5px solid #E4FDE1;
+    }
+    
+    .card p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: x-large;
+        font-weight: bolder;
+        color: #1D3461;
+        text-align: justify;
+    }
+    
+    .card p span {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+        color: #011936;
+    }
